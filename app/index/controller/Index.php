@@ -30,6 +30,10 @@ class Index extends BaseController
 
     public function hello($name = 'ThinkPHP6')
     {
-        return 'hello,' . $name;
+//        $res = Db::table('qing_article')->where('id', 7)->find();
+//        $res1 = Db::table('qing_article')->where('id', 71)->findOrEmpty();
+//        $res1 = Db::table('qing_article')->where('id', 71)->findOrFail();
+        $res1 = Db::table('qing_article')->where('id', 7)->select()->toArray();//二维数组
+        halt($res1);
     }
 }
