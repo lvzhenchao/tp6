@@ -2,6 +2,7 @@
 namespace app\index\controller;
 
 use app\BaseController;
+use app\model\User;
 use think\facade\Db;
 
 class Index extends BaseController
@@ -42,5 +43,15 @@ class Index extends BaseController
         $res = Db::name("article")->where("id","=", 7)->select()->toArray();
         $res = Db::name("article")->where("id", 7)->select()->toArray();
         halt($res);
+    }
+
+    public function modelSearch()
+    {
+        $user = User::find(1);
+        echo $user->delete_time;
+        echo $user->name;
+
+        $user_model = new User();
+        halt($user_model->index());
     }
 }
