@@ -7,8 +7,16 @@ use think\facade\Db;
 
 class Index extends BaseController
 {
+
     public function index()
     {
+
+        return "中间件方法";
+    }
+    public function index1()
+    {
+
+        return "中间件方法";
 //        $data = ['title' => 'title1', 'writer' => 'writer1'];
 //        $res = Db::name('article')->save($data);
 //        $res1 = Db::name('article')->strict(false)->insert($data);//如果不希望抛出异常 不存在字段的值将会直接抛弃。
