@@ -9,5 +9,7 @@ return [
     // \think\middleware\SessionInit::class
 
     //调用中间件
-     app\middleware\Check::class
+//     app\middleware\Check::class,
+     app\middleware\Before::class,
+     app\middleware\After::class,
 ];

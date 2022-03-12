@@ -3,8 +3,7 @@ declare (strict_types = 1);
 
 namespace app\middleware;
 
-
-class Check
+class After
 {
     /**
      * 处理请求
@@ -16,9 +15,6 @@ class Check
     public function handle($request, \Closure $next)
     {
 
-
-        echo "app中间件</br>";
-
-        return $next($request);
+        halt($request);
     }
 }
