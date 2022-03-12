@@ -36,4 +36,11 @@ class Index extends BaseController
         $res1 = Db::table('qing_article')->where('id', 7)->select()->toArray();//二维数组
         halt($res1);
     }
+
+    public function search()
+    {
+        $res = Db::name("article")->where("id","=", 7)->select()->toArray();
+        $res = Db::name("article")->where("id", 7)->select()->toArray();
+        halt($res);
+    }
 }
