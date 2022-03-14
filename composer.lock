@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "893f6634aa5683a78c2882b80e386e1c",
+    "content-hash": "69afc4c4b7c5333fcf37e87ef1fd5cff",
     "packages": [
         {
             "name": "league/flysystem",
@@ -1163,6 +1163,50 @@
                 "source": "https://github.com/top-think/think-image/tree/master"
             },
             "time": "2016-09-29T06:05:43+00:00"
+        },
+        {
+            "name": "topthink/think-mongo",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/top-think/think-mongo.git",
+                "reference": "aa383c8e38fdf44d830aa085ffca01333f5af0d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/top-think/think-mongo/zipball/aa383c8e38fdf44d830aa085ffca01333f5af0d5",
+                "reference": "aa383c8e38fdf44d830aa085ffca01333f5af0d5",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "type": "library",
+            "autoload": {
+                "files": [],
+                "psr-4": {
+                    "think\\mongo\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "liu21st",
+                    "email": "liu21st@gmail.com"
+                }
+            ],
+            "description": "mongodb driver for thinkphp5",
+            "support": {
+                "issues": "https://github.com/top-think/think-mongo/issues",
+                "source": "https://github.com/top-think/think-mongo/tree/master"
+            },
+            "time": "2017-10-16T03:05:45+00:00"
         },
         {
             "name": "topthink/think-multi-app",
