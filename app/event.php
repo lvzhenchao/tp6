@@ -10,6 +10,12 @@ return [
         'HttpEnd'  => [],
         'LogLevel' => [],
         'LogWrite' => [],
+        'swoole.task' => [
+            app\listener\SmsTask::class,
+        ],
+        'swoole.finish' => [
+            app\listener\SmsTaskFinish::class,
+        ],
     ],
 
     'subscribe' => [
