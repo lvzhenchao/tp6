@@ -10,6 +10,6 @@ return [
 
     //调用中间件
 //     app\middleware\Check::class,
-     app\middleware\Before::class,
-     app\middleware\After::class,
+//     app\middleware\Before::class,
+//     app\middleware\After::class,
 ];
