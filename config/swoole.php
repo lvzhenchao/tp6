@@ -57,14 +57,14 @@ return [
     //连接池
     'pool'       => [
         'db'    => [
-            'enable'        => true,
-            'max_active'    => 3,
-            'max_wait_time' => 5,
+            'enable'        => true,// 是否启用，不启动设置为false
+            'max_active'    => 100,// 最大连接数，超过将不再新建
+            'max_wait_time' => 5,// 超时时间
         ],
         'cache' => [
-            'enable'        => true,
-            'max_active'    => 3,
-            'max_wait_time' => 5,
+            'enable'        => true,// 是否启用，不启动设置为false
+            'max_active'    => 3,// 最大连接数，超过将不再新建
+            'max_wait_time' => 5,// 超时时间
         ],
         //自定义连接池
     ],
